@@ -1,6 +1,6 @@
 # Rack::ServerStatus [![Build Status](https://travis-ci.org/SpringMT/rack-server_status.svg?branch=master)](https://travis-ci.org/SpringMT/rack-server_status)
 
-TODO: Write a gem description
+This is a Ruby version of [kazeburo/Plack-Middleware-ServerStatus-Lite](https://github.com/kazeburo/Plack-Middleware-ServerStatus-Lite).
 
 ## Installation
 

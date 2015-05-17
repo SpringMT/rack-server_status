@@ -1,4 +1,4 @@
-Copyright 2015 haruyama-makoto
+Copyright 2015 SpringMT
 
 MIT License
 

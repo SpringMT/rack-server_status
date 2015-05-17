@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Show server status}
   spec.description   = %q{Show server status}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/SpringMT/rack-server_status"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")

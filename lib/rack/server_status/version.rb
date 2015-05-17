@@ -1,5 +1,5 @@
 module Rack
-  module ServerStatus
+  class ServerStatus
     VERSION = "0.0.1"
   end
 end

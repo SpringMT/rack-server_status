@@ -1,2 +1,7 @@
-$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
+require 'bundler'
+Bundler.setup(:default, :test)
+Bundler.require(:default, :test)
+
+$TESTING=true
+$:.unshift File.join(File.dirname(__FILE__), '..', 'lib/rack/')
 require 'rack/server_status'

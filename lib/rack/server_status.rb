@@ -24,10 +24,13 @@ module Rack
 
       if @path && env['PATH_INFO'] == @path
         res = handle_server_status(env)
+        set_state!('_')
         return res
       end
 
-      @app.call(env)
+      res = @app.call(env)
+      set_state!('_')
+      return res
     end
 
     private

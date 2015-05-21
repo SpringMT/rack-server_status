@@ -79,12 +79,12 @@ module Rack
         busy = 0
         if @skip_ps_command
           all_workers = stats.keys
-        elsif RUBY_PLATFORM =~/mswin(?!ce)|mingw|cygwin|bccwin/
+        elsif RUBY_PLATFORM !~ /mswin(?!ce)|mingw|cygwin|bccwin/
           ps = `LC_ALL=C command ps -e -o ppid,pid`
           ps.each_line do |line|
             line.lstrip!
             next if line =~ /^\D/
-            ppid, pid = line.chmop.split(/\s+/, 2)
+            ppid, pid = line.chomp.split(/\s+/, 2)
             all_workers << pid.to_i if ppid.to_i == parent_pid
           end
         else

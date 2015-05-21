@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
 gem 'unicorn'
-gem 'worker_scoreboard'
+#gem 'worker_scoreboard', git: 'https://github.com/SpringMT/worker_scoreboard.git'
+gem 'worker_scoreboard', path: '/Users/haruyama.makoto/worker_scoreboard'
 gem 'parallel'

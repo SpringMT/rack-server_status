@@ -1,3 +1,8 @@
+PATH
+  remote: /Users/haruyama.makoto/worker_scoreboard
+  specs:
+    worker_scoreboard (0.0.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -9,7 +14,6 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
-    worker_scoreboard (0.0.2)
 
 PLATFORMS
   ruby
@@ -17,4 +21,4 @@ PLATFORMS
 DEPENDENCIES
   parallel
   unicorn
-  worker_scoreboard
+  worker_scoreboard!

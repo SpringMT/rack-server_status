@@ -1,7 +1,8 @@
-PATH
-  remote: /Users/haruyama.makoto/worker_scoreboard
+GIT
+  remote: https://github.com/SpringMT/worker_scoreboard.git
+  revision: 949d7a98b4044f26b9de864a64eb6cc790cab1ba
   specs:
-    worker_scoreboard (0.0.2)
+    worker_scoreboard (0.0.3)
 
 GEM
   remote: https://rubygems.org/

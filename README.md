@@ -55,7 +55,7 @@ pid status remote_addr host method uri protocol ss
 {"Uptime":1432388968,"BusyWorkers":1,"IdleWorkers":3,"stats":[{"remote_addr":null,"host":"-","method":null,"uri":null,"protocol":null,"pid":87240,"status":"_","ss":2},{"remote_addr":"127.0.0.1","host":"localhost:3000","method":"GET","uri":"/server-status?json","protocol":"HTTP/1.1","pid":87241,"status":"A","ss":0},{"remote_addr":null,"host":"-","method":null,"uri":null,"protocol":null,"pid":87242,"status":"_","ss":3},{"remote_addr":null,"host":"-","method":null,"uri":null,"protocol":null,"pid":87243,"status":"_","ss":3}]}
 ```
 
-## Configration
+## Configuration
 
 | name | detail | example | default |
 |------|--------|---------|---------|

@@ -19,18 +19,13 @@ module Rack
     def call(env)
       set_state!('A', env)
 
-      @clean_proc = Remover.new
-      ObjectSpace.define_finalizer(self, @clean_proc)
-
-      if @path && env['PATH_INFO'] == @path
-        res = handle_server_status(env)
-        set_state!('_')
-        return res
+      if env['PATH_INFO'] == @path
+        handle_server_status(env)
+      else
+        @app.call(env)
       end
-
-      res = @app.call(env)
+    ensure
       set_state!('_')
-      return res
     end
 
     private
@@ -132,15 +127,5 @@ EOF
       end
       return [200, {'Content-Type' => 'text/plain'}, [body]]
     end
-
-    class Remover
-      def initialize
-      end
-      def call(*args)
-        set_state!('_')
-      end
-    end
-
   end
-
 end
